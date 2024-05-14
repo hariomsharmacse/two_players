@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("backgroun.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    /* align-items: center; */
+}
+
+.main{
+    width: 50rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: rgba(255, 255, 255, 0.15); /* Transparent white background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* flex-wrap: wrap; */
+    padding-bottom: 30px;
+}
+
+
+#username1, #username2{
+    padding: 5px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.15); 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+progress{
+    width: 273px;
+  height: 30px;
+  border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #0ec114;
+    border-radius: 6px;
+}
+
+progress::-webkit-progress-bar{
+    background-color: red;
+    border-radius: 6px;
+}
+
+#score1, #score2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+#attack1, #attack2{
+    padding: 6px 16px;
+    font-size: 18px;
+    margin-left: 94px;
+    margin-top: 40px;
+    border-radius: 22px;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.15); 
+    color: rgb(58, 56, 56);
+    letter-spacing: 2px;
+    
+}
+
+button:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+#player1wins, #player2wins{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+#finalwinner1, #finalwinner2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#newGame, #resetGame{
+   margin-top: 10px;
+   padding: 6px 16px;
+    font-size: 18px;
+    border-radius: 22px;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.15); 
+    color: rgb(58, 56, 56);
+    letter-spacing: 2px;
+    position: fixed;
+    /* bottom: -20px; */
+
+}
+
+#newGame{
+    left: 320px;
+    bottom: 165px;
+    display: none;
+}
+
+#resetGame{
+    right: 325px;
+}

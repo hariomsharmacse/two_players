@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div id="player1_data">
+            <label for="name"></label>
+            <input type="text" name="name" id="username1" placeholder="Enter Player 1 Name" autocomplete="off">
+            <h1 id="health1">Player 1 Health: 100</h1>
+            <progress id="power1" value="100" max="100" min="0"></progress>
+            <div id="score1">Score: 0</div>
+            <div id="attackfrom_player2"></div>
+            <button id="attack1">Attack</button>
+            <div id="player1wins">Wins: 0</div>
+            <div id="finalwinner1"></div>
+            <button id="newGame">New Game</button>
+        </div>
+        <div id="player2_data">
+            <label for="name"></label>
+            <input type="text" name="name" id="username2" placeholder="Enter Player 2 Name" autocomplete="off" required>
+            <h1 id="health2">Player 2 Health: 100</h1>
+            <progress id="power2" value="100" max="100" min="0"></progress>
+            <div id="score2">Score: 0</div>
+            <div id="attackfrom_player1"></div>
+            <button id="attack2">Attack</button>
+            <div id="player2wins">Wins: 0</div>
+            <div id="finalwinner2"></div>
+            <button id="resetGame">Reset Game</button>
+        </div>
+        
+    </div>
+</body>
+</html>
