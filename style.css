@@ -141,11 +141,11 @@ button:hover{
 
 @media (max-width:600px) {
     body{
-        height: 97vh;
+        height: 94vh;
     }
     .main{
         width: 99%;
-        height: 80vh;
+        height: 60vh;
         gap: 1rem;
         padding: 0px;
 
@@ -211,13 +211,13 @@ button:hover{
     }
     
     #newGame{
-        left: 35%;
+        left: 40%;
         bottom: 18%;
         display: none;
     }
     
     #resetGame{
-        right: 35%;
+        right: 30%;
         bottom: 5%;
     }
 
