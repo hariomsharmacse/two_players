@@ -29,7 +29,6 @@ body{
     backdrop-filter: blur(10px);
     padding: 30px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    flex-wrap: wrap;
     padding-bottom: 30px;
 }
 
@@ -137,4 +136,85 @@ button:hover{
 
 #resetGame{
     right: 325px;
+}
+
+
+@media (max-width:600px) {
+    .main{
+        width: 94%;
+        height: 100%;
+        gap: 1rem;
+        padding: 0px;
+
+    }
+
+    #username1, #username2{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 15px;
+        margin-top: 2px;
+    }
+    
+    progress{
+        width: 80%;
+      height: 27px;
+    }
+    
+    
+    
+    #score1, #score2{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    
+    #attack1, #attack2{
+        padding: 6px 16px;
+        font-size: 16px;
+        margin-left: 30%;
+        margin-top: 30px;
+        
+    }
+    
+    
+    #player1wins, #player2wins{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+    #finalwinner1, #finalwinner2{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    #newGame, #resetGame{
+
+        font-size: 16px;
+        border-radius: 22px;
+        border: none;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        background: rgba(255, 255, 255, 0.15); 
+        color: rgb(58, 56, 56);
+        letter-spacing: 2px;
+        position: fixed;
+        /* bottom: -20px; */
+    
+    }
+    
+    #newGame{
+        left: 50%;
+        bottom: 5%;
+        display: none;
+    }
+    
+    #resetGame{
+        right: 50%;
+        bottom: 5%;
+    }
+    
+    
 }
